@@ -14,7 +14,10 @@ export default function App() {
                     <Route path="/" component={Home} />
                 </Switch>
             </main>
-            <footer>Built by Farhan Mohammed for Shopify</footer>
+            <footer>
+                Built by <a href="https://github.com/farhan-mohammed">farhan-mohammed</a> for
+                Shopify
+            </footer>
         </div>
     );
 }

@@ -1,0 +1,62 @@
+.card {
+    &-con {
+        display: flex;
+        padding: 12px 0 0 0px;
+        margin: 12px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding-bottom: 12px;
+        }
+    }
+    &-liked {
+        &__con {
+            user-select: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &__checkbox {
+            margin-right: 8px;
+        }
+    }
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        & > img {
+            max-height: 300px;
+            max-width: 300px;
+            @media (max-width: 768px) {
+                width: 100%;
+                max-width: unset;
+                max-height: unset;
+            }
+        }
+    }
+    &-body {
+        margin: 12px;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        &__c {
+            margin-top: auto;
+            @media (max-width: 768px) {
+                margin-top: 8px;
+            }
+        }
+        &__exp {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; /* Number of lines displayed before it truncate */
+            overflow: hidden;
+        }
+        &__date {
+            margin-bottom: 8px;
+        }
+    }
+}

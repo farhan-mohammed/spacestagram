@@ -1,0 +1,44 @@
+.home {
+    &-body {
+        &__con {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+    &-page {
+        &__con {
+            display: flex;
+            margin: 0 auto;
+            margin-top: auto;
+            align-items: center;
+            justify-content: center;
+
+            &.top {
+                margin-top: unset;
+            }
+        }
+        &__main {
+            margin: 0 50px;
+            user-select: none;
+        }
+        &__right,
+        &__left {
+            font-weight: 600;
+            user-select: none;
+            font-size: 1.6em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &__right {
+        }
+        &__left {
+        }
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

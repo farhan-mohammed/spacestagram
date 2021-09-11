@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Fragment } from 'react';
 
 export default function Card(props) {
-    const { title, media_type, url } = props;
-
     return (
         <article className="card-con">
             <div className="card-image">
@@ -46,6 +44,7 @@ function RenderLikeButton({ date }) {
     const [liked, setLiked] = useState(false);
     useEffect(() => {
         setLiked(Boolean(localStorage.getItem(date)));
+        // eslint-disable-next-line
     }, []);
 
     function setCondition() {

@@ -11,7 +11,7 @@ export default function Home() {
         const DAY = TODAY.getDay();
         let month = TODAY.getMonth() - 1;
         let year = TODAY.getFullYear();
-        if (month == 0) {
+        if (month === 0) {
             year -= 1;
             month = 12;
         }
